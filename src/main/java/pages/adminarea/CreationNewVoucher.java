@@ -1,11 +1,11 @@
-package adminarea;
+package pages.adminarea;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static adminarea.Browser.driver;
+import static pages.adminarea.Browser.driver;
 
 public class CreationNewVoucher {
 

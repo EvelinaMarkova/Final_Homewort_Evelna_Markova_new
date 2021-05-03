@@ -1,6 +1,6 @@
 package core;
 
-import adminarea.Browser;
+import pages.adminarea.Browser;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 public class BaseTest {

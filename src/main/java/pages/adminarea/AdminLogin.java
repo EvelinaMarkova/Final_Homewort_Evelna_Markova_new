@@ -1,4 +1,4 @@
-package adminarea;
+package pages.adminarea;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

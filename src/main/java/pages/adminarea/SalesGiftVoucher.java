@@ -1,10 +1,10 @@
-package adminarea;
+package pages.adminarea;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static adminarea.Browser.driver;
+import static pages.adminarea.Browser.driver;
 import static org.openqa.selenium.By.cssSelector;
 
 public class SalesGiftVoucher {

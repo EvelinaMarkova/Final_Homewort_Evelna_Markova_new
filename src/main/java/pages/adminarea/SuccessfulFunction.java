@@ -1,9 +1,9 @@
-package adminarea;
+package pages.adminarea;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-import static adminarea.Browser.driver;
+import static pages.adminarea.Browser.driver;
 
 public class SuccessfulFunction {
 

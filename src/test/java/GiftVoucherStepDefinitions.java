@@ -1,5 +1,3 @@
-import adminarea.Browser;
-import adminarea.*;
 import core.BaseTest;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -7,12 +5,13 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.annotations.Test;
+import pages.adminarea.*;
 
 
 @Test
 public class GiftVoucherStepDefinitions extends BaseTest {
 
-    @Before
+   @Before
     public void setup() {
         Browser.setup();
     }
@@ -49,7 +48,7 @@ public class GiftVoucherStepDefinitions extends BaseTest {
     }
 
 
-@Then("proverjavame_dali_vouchera_e_uspeshno_sazdaden")
+@Then("proverjavame dali vouchera e uspeshno sazdaden")
     public void proverjavame_dali_vouchera_e_uspeshno_sazdaden() {
     SuccessfulFunction.proverjavame_dali_vouchera_e_uspeshno_sazdaden();
 

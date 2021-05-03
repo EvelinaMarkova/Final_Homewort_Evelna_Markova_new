@@ -1,10 +1,10 @@
-package adminarea;
+package pages.adminarea;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static adminarea.Browser.driver;
+import static pages.adminarea.Browser.driver;
 import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.xpath;
 
@@ -30,16 +30,16 @@ public class GiftVoucherDelete {
             wait.until(ExpectedConditions.elementToBeClickable(cssSelector(".fa-trash-o")));
             giftVoucherDelete.click();
 
-            try {
+           try {
                 Alert alert = driver.switchTo().alert();
                 alert.accept();
                 wait.until(ExpectedConditions.visibilityOf((WebElement) cssSelector(".alert-success")));
             } catch (NoAlertPresentException e) {
                 e.printStackTrace();
             }
-            WebElement newGiftVoucher1 = driver.findElement(cssSelector(".container-fluid .btn-primary>.fa-plus"));
+            WebElement newGiftVoucher1 = driver.findElement(cssSelector(".fa-plus"));
           //  WebDriverWait wait = new WebDriverWait(driver, 15);
-            wait.until(ExpectedConditions.elementToBeClickable(cssSelector(".container-fluid .btn-primary>.fa-plus")));
+            wait.until(ExpectedConditions.elementToBeClickable(cssSelector(".fa-plus")));
             newGiftVoucher1.click();
 
         } else {
